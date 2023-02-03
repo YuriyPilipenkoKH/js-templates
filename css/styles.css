@@ -12,8 +12,36 @@ ul, li, img  {
     padding: 16px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.control {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.control button {
+  min-width: 35px;
+  padding: 8px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  outline: 2px solid crimson;
+  padding: 10px;
+  width: 100%;
+}
+
+.container button {
+  min-width: 50px;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 
