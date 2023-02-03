@@ -1,6 +1,14 @@
-const container = document.querySelector('.js-container')
+const container = document.querySelector('.js-container');
+container.addEventListener('click', onClick)
 
-function onClick(event) {}
+function onClick(event) {
+    if (event.target.nodeName !== 'BUTTON') {
+        return
+    }
+    console.log(event.target);
+    console.log(event.target.textContent);
+    console.log(event.target.nodeName);
+}
 
 // input: document.querySelector("#controls").firstElementChild,
 

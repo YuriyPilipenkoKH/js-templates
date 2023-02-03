@@ -56,3 +56,25 @@ ul, li, img  {
   border-radius: 5px;
   background-color: #5ed1a5;
 }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  outline: 1px solid teal;
+  width: 100%;
+}
+
+.tags__btn {
+  font-family: inherit;
+  padding: 4px 18px;
+  border-radius: 8px;
+  border: 3px solid orange;
+}
+
+.tags__btn--active {
+  color: #ff5;
+  background-color: #3f51b5;
+}
