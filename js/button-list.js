@@ -2,6 +2,8 @@ const container = document.querySelector('.js-container')
 
 function onClick(event) {}
 
+// input: document.querySelector("#controls").firstElementChild,
+
 const addBtn = document.querySelector('.js-add-button')
 const delBtn = document.querySelector('.js-del-button')
 let labelCounter = 6;
@@ -20,6 +22,6 @@ function onAddBtnClick() {
 
 
 function onDelBtnClick() {
-    document.removeElement('button')
+    container.lastElementChild.remove()
     labelCounter -=1;
 }
