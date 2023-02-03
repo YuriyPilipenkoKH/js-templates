@@ -1,0 +1,105 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+ul, li, img  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-3 {
+    gap: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gallery > li {
+    padding:  0 20px;
+}
+
+.gallery > li > img {
+    width: 100%;
+   
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(3, 6em);
+    place-items: center;
+    justify-content: center;
+
+   
+}
+.counter button{
+    margin: 0;
+    padding: 8px 22px;
+    border-radius: 8px;
+    border: 1px solid #777;
+    font-size: 1em;
+}
+
+.counter span{
+    font-size: 2em;
+    color:teal;
+}
+
+.task-5 {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
+
+  .task-7 {
+    flex-direction: column;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .color {
+
+    color: beige;
+    background-color: #777;
+    padding: 5px 12px;
+  }
+
+  #controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .task-10,
+  #boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+

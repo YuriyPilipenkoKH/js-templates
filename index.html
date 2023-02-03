@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>goit-js-hw-06</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <main>
+
+        <section class="wrapper">
+            <ul id="categories">
+                <li class="item">
+                  <h2>Animals</h2>
+                  <ul>
+                    <li>Cat</li>
+                    <li>Hamster</li>
+                    <li>Horse</li>
+                    <li>Parrot</li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <h2>Products</h2>
+                  <ul>
+                    <li>Bread</li>
+                    <li>Prasley</li>
+                    <li>Cheese</li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <h2>Technologies</h2>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                  </ul>
+                </li>
+              </ul>
+        </section>
+
+          <section class="wrapper">
+              <ul id="ingredients"></ul>
+          </section>
+
+          <section class="wrapper  task-3">
+              <ul class="gallery"></ul>
+          </section>
+
+          <section class="wrapper task-4">
+              <div class="counter" id="counter">
+                <button type="button" data-action="decrement">-1</button>
+                <span id="value">0</span>
+                <button type="button" data-action="increment">+1</button>
+              </div>
+          </section>
+
+          <section class="wrapper task-5">
+              <input type="text" id="name-input" placeholder="Please enter your name" />
+                <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+          </section>
+
+          <section class="wrapper">
+            <input
+              type="text"
+              id="validation-input"
+              data-length="6"
+              placeholder="Please enter 6 symbols"
+            />
+          </section>
+
+          <section class="wrapper task-7">
+            <input id="font-size-control" type="range" min="16" max="96" />
+            <br />
+            <span id="text">Abracadabra!</span>
+          </section>
+
+          <section class="wrapper">
+            <form class="login-form">
+              <label>
+                Email
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Password
+                <input type="password" name="password" />
+              </label>
+              <button type="submit">Login</button>
+            </form>
+
+          </section>
+
+          <section class="wrapper">
+            <div class="widget">
+              <p>Background color: <span class="color">-</span></p>
+              <button type="button" class="change-color">Change color</button>
+            </div>
+
+          </section>
+
+          <section class="wrapper task-10">
+            <div id="controls">
+              <input type="number" min="1" max="100" step="1" />
+              <button type="button" data-create>Create</button>
+              <button type="button" data-destroy>Destroy</button>
+            </div>
+            
+            <div id="boxes"></div>
+
+          </section>
+
+                  
+    </main>
+
+    <script src="./js/task-1.js" type="module"></script>    
+    <script src="./js/task-2.js" type="module"></script>    
+    <script src="./js/task-3.js" type="module"></script>    
+    <script src="./js/task-4.js" type="module"></script>    
+    <script src="./js/task-5.js" type="module"></script>    
+    <script src="./js/task-6.js" type="module"></script>    
+    <script src="./js/task-7.js" type="module"></script>    
+    <script src="./js/task-8.js" type="module"></script>    
+    <script src="./js/task-9.js" type="module"></script>    
+    <script src="./js/task-10.js" type="module"></script>    
+
+</body>
+</html>
