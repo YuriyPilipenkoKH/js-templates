@@ -1,5 +1,8 @@
 body {
     font-family: 'Prompt', sans-serif;
+    padding: 16px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 ul, li, img  {
@@ -122,4 +125,13 @@ ul, li, img  {
 .fun-input {
   font-weight: 600;
   color: crimson;
+}
+
+.flist li{
+padding: 6px;
+}
+/* ===============lazy-loading.html================== */
+
+.feed  li img{
+width: 100%;
 }

@@ -15,4 +15,19 @@
 
     `;
  } 
- console.log('chatty-events.html');
+// =================debounce=================
+
+const inputRef = document.querySelector('.js-input')
+const outputRef = document.querySelector('.js-output')
+let inputCbInvocationCounter = 0
+
+inputRef.addEventListener('input', _.debounce(onInputChange,2000))
+
+function onInputChange(e) {
+    inputCbInvocationCounter += 1;
+
+    outputRef.textContent = `
+    onMouseMove() Invocations: ${inputCbInvocationCounter},
+    X: ${e.target.value},
+    `
+}
