@@ -27,3 +27,7 @@ function logMessage() {
      console.log('Target button click');
 
 }
+
+//===========indexOf()===============
+
+

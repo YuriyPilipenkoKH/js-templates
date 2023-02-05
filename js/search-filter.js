@@ -1,3 +1,4 @@
+
 const tech = [
     {label: 'html'},
     {label: 'css'},
@@ -14,10 +15,30 @@ const tech = [
     {label: 'mongodb'},
 ];
 
+// // console.log(tech[0].label);
+// // console.log(tech[2].label);
+// // console.log(tech[0]['label']);
+// // console.log(tech[1].label);
+
+
+// // for (const k in tech) {
+// //     console.log(k);
+// // // console.log(tech[k]);
+
+// // }
+
+// console.log(Object.keys(tech[0]));
+
+
+
 const refs = {
     list: document.querySelector('.js-list'),
     input: document.querySelector('#filter'),
 }
+// console.log(refs['list']);
+// console.log(refs['input']);
+
+
 refs.input.addEventListener('input', _.debounce(onFilterChange,1300))
 // refs.input.addEventListener('input',onFilterChange)//default
 

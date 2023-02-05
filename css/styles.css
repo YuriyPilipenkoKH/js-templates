@@ -134,4 +134,16 @@ padding: 6px;
 
 .feed  li img{
 width: 100%;
+
+transform: translateX(-50%);
+opacity: 0;
+transition: all 2500ms;
+object-fit: cover;
+
 }
+
+.feed img.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
