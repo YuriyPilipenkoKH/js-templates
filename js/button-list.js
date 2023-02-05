@@ -11,6 +11,7 @@ function onClick(event) {
 }
 
 // input: document.querySelector("#controls").firstElementChild,
+// input: document.querySelector("#controls").firstElementChild,
 
 const addBtn = document.querySelector('.js-add-button')
 const delBtn = document.querySelector('.js-del-button')
