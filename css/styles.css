@@ -80,6 +80,11 @@ ul, li, img  {
   background-color: #3f51b5ff;
 }
 
+.task-1 li{
+  font-family: inherit;
+  font-weight: 700;
+}
+
 /* ===============colorpicker================== */
 
 .palette {
@@ -110,4 +115,11 @@ ul, li, img  {
   padding:8px;
   font-weight: 600;
   background-color: #cca;
+}
+
+/* ===============chatty-events.html================== */
+
+.fun-input {
+  font-weight: 600;
+  color: crimson;
 }

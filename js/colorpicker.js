@@ -6,8 +6,8 @@ function getRandomHexColor() {
      }
 
 function hexToRgb(hex){
-    let converter = [hex.slice(0, 2), hex.slice(2, 4), hex.slice(4, 6)]; //definir os intervalos para corte (FF, FF, FF)
-    let keep = [];
+    const converter = [hex.slice(0, 2), hex.slice(2, 4), hex.slice(4, 6)]; //definir os intervalos para corte (FF, FF, FF)
+    const keep = [];
     let i = 0;
     // console.log(converter);
     
@@ -86,18 +86,27 @@ function onPaletteContainerClick(e) {
     return
    }
 
-  
 
-   const currentActiveCard = document.querySelector('.color-card.is-active');
-   if(currentActiveCard) {
-    currentActiveCard.classList.remove('is-active')
-   }
+
    const swatchEl = e.target;
    const parentColorCard = swatchEl.closest('.color-card') 
 
-   parentColorCard.classList.add('is-active')
-//    console.log(e.target.dataset.hex);
-//    console.log(e.target.dataset.rgb);
-   document.body.style.backgroundColor = swatchEl.dataset.hex
+    removeActiveCardClass();
+    addActiveCardClass(parentColorCard )
+    setBodyColor(swatchEl.dataset.hex);
 }  
 
+function setBodyColor(color) {
+    document.body.style.backgroundColor = color;
+}
+
+function removeActiveCardClass() {
+    const currentActiveCard = document.querySelector('.color-card.is-active');
+   if(currentActiveCard) {
+    currentActiveCard.classList.remove('is-active')
+   }
+}
+
+function addActiveCardClass (card) {
+    card.classList.add('is-active')
+}
