@@ -20,6 +20,14 @@ ul, li, img  {
     justify-content: center;
 }
 
+.list {
+  gap: 16px;
+}
+
+.list li {
+font-weight: 600;
+}
+
 .control {
   display: flex;
   gap: 20px;
